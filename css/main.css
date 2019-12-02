@@ -10,8 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3 "Denk One", sans-serif;
-  font-family: "Denk One", sans-serif;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -22,13 +21,14 @@ body {
   margin: 0;
 }
 
-img {
+.img-flex {
   width: 100%;
   display: block;
 }
 
 p {
-  font-family: Georgia;
+  margin: 0;
+  padding: 0 1rem 1rem;
 }
 
 .text {
@@ -38,11 +38,8 @@ p {
 h2 {
   margin: 0;
   padding: 1.3rem 1rem 1rem;
-}
-
-p {
-  margin: 0;
-  padding: 0 1rem 1rem;
+  font-size: 1.5rem;
+  font-family: "Denk One", sans-serif;
 }
 
 @media only screen and (min-width: 38em) {
@@ -62,9 +59,29 @@ p {
     bottom: 1.5rem;
   }
 
-  .img-flex {
-    display: flex;
+  .banner {
     position: relative;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .text {
+    width: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
